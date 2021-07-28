@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<body>
+
+    <nav class="w3-bar w3-black">
+        <img src="images/logo_waf.jpg" class="w3-round w3-right" alt="logo_waf">
+        <a href = "/test2/hjem" class="w3-button w3-bar-item">Hjem</a>
+        <a href = "/test2/prod" class="w3-button w3-bar-item">Produkter</a>
+        <a href = "/test2/omoss" class="w3-button w3-bar-item">Om oss</a>
+        <a href = "/test2/kontakt" class="w3-button w3-bar-item">Kontakt</a>
+
+    </nav>
+
+    <section>
+        <img class="mySlides" src="images/slide1.jpg" style="width100%">
+        <img class="mySlides" src="images/slide2.jpg" style="width:100%">
+        <img class="mySlides" src="images/slide3.jpg" style="width:100%">
+    </section>
+
+    <!-- Om oss -->
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">Wood and food</h2>
+        <p class="w3-opacity"><i>Et snilt lite ideelt selskap, som selger bruktfunn for den kresne. Vi
+                selger også kaffe, lunsjretter og sunn mat i farta! </i></p>
+        <p class="w3-justify">Vi er en arbeidsplass som ansetter rusavhengige. Sammen produserer
+            og selger vi mat og interiørartikler. Bedriften er basert på et ideal om at samfunnet vårt
+            er romslig, og at den menneskelige tilstand kommer i mange uttrykk. </p>
+    </section>
+
+    <footer class="w3-container w3-padding-64 w3-center w3-white w3-xlarge">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-medium">
+
+        </p>
+    </footer>
+
+    <script>var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000);
+        }
+    </script>
+
+</body>
+
+</html>
